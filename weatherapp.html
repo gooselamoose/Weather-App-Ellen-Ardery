@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Today's Weather</title>
+    <link href="src/weatherstyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <script src="src/weatherscript.js"></script>
+    <script
+      src="https://kit.fontawesome.com/dfc6b97321.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="container" id="search-container">
+        <form id="search-city">
+          <input
+            type="search"
+            placeholder="Search city...."
+            id="city-text-input"
+          />
+          <input type="submit" value="Search" id="city-button" />
+          <input
+            type="submit"
+            value="Current Location"
+            id="current-location-button"
+          />
+        </form>
+        <!--search city-->
+        <h1 id="city"></h1>
+        <ul>
+          <li id="date"></li>
+          <li id="weather-type"></li>
+        </ul>
+        <div class="row" id="weather-details">
+          <div class="col-6" id="weather-description"></div>
+          <!--weather description-->
+        </div>
+        <!--weather details-->
+      </div>
+      <!--container search container-->
+    </div>
+    <!--wrap-->
+  </body>
+</html>
