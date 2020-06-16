@@ -1,0 +1,14 @@
+body {
+}
+
+.wrap {
+  border: 1px solid #000000;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 4px;
+}
+
+.col-2 {
+  color: blue;
+}
