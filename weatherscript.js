@@ -28,7 +28,7 @@ function searchCity(city) {
   axios.get(url).then(showWeather);
 
   url = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(url).then(displayForecast);
+  axios.get(url).then(showForecast);
 }
 
 function handleSubmit(event) {
@@ -56,7 +56,7 @@ searchForm.addEventListener("submit", handleSubmit);
 
 function showTime() {}
 
-function displayForecast(response) {
+function showForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
   let forecast = null;
