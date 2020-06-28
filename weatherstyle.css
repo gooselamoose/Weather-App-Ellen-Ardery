@@ -1,13 +1,18 @@
+h1 {
   text-align: center;
   padding: 30px 1px;
   margin: 30px auto;
   color: #216583;
   font-size: 50px;
+  transition: 150ms ease-in-out;
   line-height: 30px;
   width: 440px;
   border: 10px 1px;
 }
 
+h1:hover {
+  color: #bac964;
+  transition: 200ms ease-in-out;
 }
 
 .w {

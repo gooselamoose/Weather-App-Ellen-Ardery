@@ -54,6 +54,8 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", handleSubmit);
 
+function showTime() {}
+
 function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML = null;
