@@ -56,7 +56,7 @@ searchForm.addEventListener("submit", handleSubmit);
 
 function showTime() {}
 
-function convertToFahrenheit(event) {
+/*function convertToFahrenheit(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   let temperature = Number(temperature);
@@ -64,7 +64,7 @@ function convertToFahrenheit(event) {
 }
 
 let fahrenheit = document.querySelector("#fahrenheit");
-fahrenheit.addEventListener("click", convertToFahrenheit);
+fahrenheit.addEventListener("click", convertToFahrenheit); */
 
 function showForecast(response) {
   let forecastElement = document.querySelector("#forecast");
