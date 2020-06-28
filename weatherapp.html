@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Today's Weather</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="weatherstyle.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=MuseoModerno&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/dfc6b97321.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Today's <span class="w">W</span>eather</h1>
+      <div class="container" id="search-container">
+        <form id="search-city" class="">
+          <div class="row">
+            <div class="col-5">
+              <input
+                type="search"
+                placeholder="Search city...."
+                class="border border-light h-100 w-100"
+                id="city-text-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="Search" class="h-100 w-100 search" />
+            </div>
+            <div class="col-4">
+              <button class="btn btn-primary" id="current-location-button">
+                Current location
+              </button>
+            </div>
+          </div>
+        </form>
+        <!--search city-->
+        <h2 id="city"></h2>
+        <ul>
+          <li id="date"></li>
+          <li id="weather-type"></li>
+        </ul>
+        <div class="row" id="weather-details">
+          <div class="col-6" id="weather-description">
+            <ul id="description-list">
+              <li id="temperature-figures">
+                <span id="temperature"> </span>
+                <span class="celcius"> ºC</span> |
+                <span class="fahrenheit">ºF</span>
+              </li>
+              <li>Humidity: <span id="humidity"></span>%</li>
+              <li>Wind: <span id="wind"></span> km/hr</li>
+            </ul>
+          </div>
+          <!--weather description-->
+          <div class="col-6" id="current-weather-display">
+            <img src="" alt="" id="current-weather-icon" />
+          </div>
+
+          <!--current weather icon-->
+        </div>
+        <!--weather details-->
+      </div>
+      <!--container search container-->
+      <div class="container forecast">
+        <div class="row" id="forecast"></div>
+        <!--row of following days-->
+      </div>
+      <!--container display forcast-->
+    </div>
+    <!--wrap-->
+    <p>Coded by Ellen Ardery</p>
+    <script src="weatherscript.js"></script>
+  </body>
+</html>
